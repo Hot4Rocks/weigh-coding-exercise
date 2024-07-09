@@ -4,13 +4,13 @@ def find_fake_gold_bar():
     def weigh(left_bars, right_bars):
         # This function simulates weighing/interacting with the web page
         # We assume it returns:
-        # - "Equal" if both sides are equal
-        # - "Left" if the left side is lighter
-        # - "Right" if the right side is lighter
+        # - 'Equal' if both sides are equal
+        # - 'Left' if the left side is lighter
+        # - 'Right' if the right side is lighter
         pass
 
-# Weigh the two groups
-result = weigh(groups[0], groups[1])
+    # Weigh the first two groups
+    result = weigh(groups[0], groups[1])
     
     if result == "Equal":
         guess_group = groups[2]
@@ -19,7 +19,7 @@ result = weigh(groups[0], groups[1])
     else:
         guess_group = groups[1]
 
-# Weigh two out of the three remaining bars 
+    # Weigh two out of the three remaining bars 
     result = weigh([guess_group[0]], [guess_group[1]])
     
     if result == "Equal":
@@ -30,3 +30,7 @@ result = weigh(groups[0], groups[1])
         fake_bar = guess_group[1]
     
     return fake_bar
+
+# Indicate which bar is fake
+fake_bar = find_fake_gold_bar()
+print("The fake gold bar is:", fake_bar)
