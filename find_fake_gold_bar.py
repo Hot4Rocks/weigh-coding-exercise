@@ -1,3 +1,6 @@
+# Mock fake bar for testing
+fake_bar = 5
+
 def find_fake_gold_bar():
     groups = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
     
@@ -35,10 +38,6 @@ def find_fake_gold_bar():
     
     return fake_bar
 
-
-# Indicate which bar is fake
-fake_bar = find_fake_gold_bar()
-print("The fake gold bar is:", fake_bar)
 
 # Indicate which bar is fake
 fake_bar = find_fake_gold_bar()
