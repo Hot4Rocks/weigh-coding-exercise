@@ -1,5 +1,4 @@
-# weigh-coding-exercise
-Take home exercise for Fetch
+## Take home exercise for Fetch
 
 Challenge
 1. Play around with the website and find the best algorithm (minimum number of weighings for any possible
