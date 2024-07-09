@@ -11,10 +11,22 @@ def find_fake_gold_bar():
 
 # Weigh the two groups
 result = weigh(groups[0], groups[1])
+    
+    if result == "Equal":
+        guess_group = groups[2]
+    elif result == "Left":
+        guess_group = groups[0]
+    else:
+        guess_group = groups[1]
 
-if result == "Equal":
-    guess_group = groups[2]
-elif result == "Left":
-    guess_group = groups[0]
-else:
-    guess_group = groups[1]
+# Weigh two out of the three remaining bars 
+    result = weigh([guess_group[0]], [guess_group[1]])
+    
+    if result == "Equal":
+        fake_bar = guess_group[2]
+    elif result == "Left":
+        fake_bar = guess_group[0]
+    else:
+        fake_bar = guess_group[1]
+    
+    return fake_bar
