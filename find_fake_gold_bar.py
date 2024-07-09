@@ -1,5 +1,5 @@
 # Mock function to simulate the weighing process
-fake_bar = 5  # For testing, let's assume the fake bar is number 5
+fake_bar = 5  # For testing we are assuming the fake bar is number 5
 
 def find_fake_gold_bar(fake_bar):
     groups = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
